@@ -1,0 +1,45 @@
+---
+import founderOne from '../assets/founder-1.png';
+import founderTwo from '../assets/founder-2.png';
+import founderThree from '../assets/founder-3.png';
+---
+
+<section class="relative overflow-hidden bg-[#FAF7F2] px-5 py-16 lg:px-8 lg:py-24">
+	<div class="absolute right-0 top-24 hidden h-28 w-2/5 bg-[#DD8A1A] lg:block"></div>
+	<div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
+		<div class="relative z-10">
+			<p class="mb-5 inline-flex bg-[#111827] px-4 py-2 text-xs font-black uppercase text-white">
+				Founders
+			</p>
+			<h1 class="text-5xl font-black uppercase leading-[0.95] text-[#111827] sm:text-6xl lg:text-7xl xl:text-8xl">
+				The Movement Is Built
+				<span class="text-[#DD8A1A]">By People Who Show Up.</span>
+			</h1>
+			<p class="mt-7 max-w-xl text-lg font-medium leading-8 text-[#1F2937]">
+				Children First began with people close enough to listen, steady enough to return and hopeful enough to invite a whole community in.
+			</p>
+		</div>
+
+		<div class="relative min-h-[560px] lg:min-h-[650px]">
+			<img
+				src={founderOne.src}
+				alt="Aravind Kumar sitting with children in the community"
+				class="absolute right-0 top-0 h-[66%] w-[76%] object-cover shadow-[18px_18px_0_#0F766E]"
+			/>
+			<img
+				src={founderTwo.src}
+				alt="Suresh Narayanan standing outdoors in the community"
+				class="absolute bottom-8 left-0 h-[34%] w-[38%] border-[10px] border-[#FAF7F2] object-cover shadow-[-14px_14px_0_#DD8A1A]"
+			/>
+			<img
+				src={founderThree.src}
+				alt="Karthik Raman seated beside a window"
+				class="absolute bottom-0 right-8 h-[30%] w-[42%] border-[10px] border-[#FAF7F2] object-cover"
+			/>
+			<div class="absolute left-8 top-12 max-w-52 bg-[#111827] p-5 text-white">
+				<p class="text-sm font-black uppercase text-[#DD8A1A]">People first</p>
+				<p class="mt-2 text-2xl font-black uppercase leading-none">Leadership that stays close.</p>
+			</div>
+		</div>
+	</div>
+</section>

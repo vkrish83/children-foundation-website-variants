@@ -1,0 +1,56 @@
+---
+const stories = [
+  {
+    number: "01",
+    title: "Learning With Confidence",
+    text: "Children discover their voice through reading support, classroom guidance and consistent encouragement.",
+  },
+  {
+    number: "02",
+    title: "Volunteers Who Listen",
+    text: "Mentors create patient spaces where young learners feel seen, supported and ready to try again.",
+  },
+  {
+    number: "03",
+    title: "Families Moving Forward",
+    text: "Parents and caregivers become partners in helping children stay connected to education.",
+  },
+  {
+    number: "04",
+    title: "A Safer Path To School",
+    text: "Community support helps remove everyday barriers that keep children from learning regularly.",
+  },
+  {
+    number: "05",
+    title: "Joy In Small Milestones",
+    text: "Every completed lesson, shared story and raised hand becomes part of a larger transformation.",
+  },
+  {
+    number: "06",
+    title: "Dreams Taking Shape",
+    text: "With guidance and care, children begin to imagine futures filled with possibility and purpose.",
+  },
+];
+---
+
+<section class="bg-white py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid gap-x-12 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+      {stories.map((story) => (
+        <article>
+          <p class="text-[#5D9C59] text-sm font-semibold tracking-[0.2em]">
+            {story.number}
+          </p>
+
+          <h3 class="mt-4 text-2xl font-bold text-[#2F3A45] leading-snug">
+            {story.title}
+          </h3>
+
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            {story.text}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,53 @@
+---
+import storyImage from "../assets/story-girl.png";
+import volunteerImage from "../assets/volunteer-v3.png";
+import dreamImage from "../assets/dream.png";
+
+const stories = [
+  {
+    title: "A classroom that felt safe",
+    image: storyImage,
+    alt: "A student smiling after a learning session",
+  },
+  {
+    title: "The mentor who kept showing up",
+    image: volunteerImage,
+    alt: "A volunteer spending time with children",
+  },
+  {
+    title: "A family moving forward together",
+    image: dreamImage,
+    alt: "A child looking hopeful",
+  },
+];
+---
+
+<section class="bg-[#FAF7F2] py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-5 sm:px-6">
+    <div class="max-w-4xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.28em] text-[#D97706] sm:text-sm">
+        More Stories
+      </p>
+
+      <h2 class="mt-6 text-4xl font-bold leading-tight text-[#1F2937] sm:text-5xl md:text-7xl">
+        More moments of care, courage and possibility.
+      </h2>
+    </div>
+
+    <div class="mt-16 grid gap-10 md:grid-cols-3">
+      {stories.map((story, index) => (
+        <article class={index === 1 ? "md:pt-16" : ""}>
+          <img
+            src={story.image.src}
+            alt={story.alt}
+            class="h-[420px] w-full rounded-[2rem] object-cover lg:rounded-[3rem]"
+          />
+
+          <h3 class="mt-6 text-3xl font-bold leading-tight text-[#1F2937]">
+            {story.title}
+          </h3>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

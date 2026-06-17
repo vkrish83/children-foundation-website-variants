@@ -1,0 +1,35 @@
+---
+import volunteerImage from '../assets/volunteer-v5.png';
+import programsImage from '../assets/programs.png';
+---
+
+<section id="volunteer" class="bg-[#FAF7F2] px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+			<div>
+				<p class="mb-5 text-sm font-black uppercase text-[#0F766E]">Volunteer movement</p>
+				<h2 class="text-5xl font-black uppercase leading-none text-[#111827] sm:text-7xl">
+					Small Actions.
+					<span class="text-[#DD8A1A]">Lasting Impact.</span>
+				</h2>
+				<p class="mt-7 max-w-xl text-lg font-medium leading-8 text-[#1F2937]">
+					Volunteering here is participation. Read with a child, mentor a teen, help run a weekend session, or bring your skills into the community.
+				</p>
+				<div class="mt-8 flex flex-wrap gap-3">
+					<span class="bg-white px-4 py-3 text-sm font-black uppercase text-[#111827]">Teach</span>
+					<span class="bg-white px-4 py-3 text-sm font-black uppercase text-[#111827]">Mentor</span>
+					<span class="bg-white px-4 py-3 text-sm font-black uppercase text-[#111827]">Listen</span>
+					<span class="bg-white px-4 py-3 text-sm font-black uppercase text-[#111827]">Organize</span>
+				</div>
+			</div>
+
+			<div class="relative min-h-[520px]">
+				<img src={volunteerImage.src} alt="Volunteers studying with children at a table" class="absolute right-0 top-0 h-[78%] w-[84%] object-cover" />
+				<img src={programsImage.src} alt="Children learning with a volunteer outside a classroom" class="absolute bottom-0 left-0 h-[42%] w-[58%] border-[10px] border-[#FAF7F2] object-cover" />
+				<a href="/contact" class="absolute bottom-10 right-0 bg-[#DD8A1A] px-7 py-5 text-sm font-black uppercase text-[#111827] transition hover:bg-[#111827] hover:text-white">
+					Become A Volunteer
+				</a>
+			</div>
+		</div>
+	</div>
+</section>

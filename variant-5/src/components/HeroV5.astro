@@ -1,0 +1,47 @@
+---
+import heroImage from '../assets/hero-v5.png';
+import volunteerImage from '../assets/volunteer-v5.png';
+---
+
+<section class="relative overflow-hidden bg-[#FAF7F2]">
+	<div class="absolute left-0 top-24 hidden h-28 w-2/5 bg-[#0F766E] lg:block"></div>
+	<div class="mx-auto grid min-h-[calc(100vh-80px)] max-w-7xl items-center gap-14 px-5 py-12 lg:grid-cols-[0.95fr_1.05fr] lg:gap-20 lg:px-8 lg:py-16 xl:gap-24">
+		<div class="relative z-10">
+			<p class="mb-5 inline-flex bg-[#DD8A1A] px-4 py-2 text-xs font-black uppercase text-[#111827]">
+				Community-powered childhoods
+			</p>
+			<h1 class="max-w-4xl text-5xl font-black uppercase leading-[0.95] text-[#111827] sm:text-6xl lg:text-7xl xl:text-8xl">
+				Every Child Deserves
+				<span class="text-[#0F766E]">A Community Behind Them.</span>
+			</h1>
+			<p class="mt-7 max-w-xl text-lg font-medium leading-8 text-[#1F2937]">
+				Education, mentorship and community support that helps children move forward with confidence.
+			</p>
+			<div class="mt-9 flex flex-col gap-3 sm:flex-row">
+				<a href="/volunteer" class="bg-[#111827] px-7 py-4 text-center text-sm font-black uppercase text-white transition hover:bg-[#0F766E]">
+					Join The Movement
+				</a>
+				<a href="#programs" class="border-2 border-[#111827] px-7 py-4 text-center text-sm font-black uppercase text-[#111827] transition hover:bg-[#DD8A1A]">
+					Our Programs
+				</a>
+			</div>
+		</div>
+
+		<div class="relative min-h-[520px] lg:min-h-[640px] xl:min-h-[660px]">
+			<img
+				src={heroImage.src}
+				alt="Children smiling together with notebooks outdoors"
+				class="absolute right-0 top-0 h-[70%] w-full object-cover shadow-[18px_18px_0_#DD8A1A] lg:w-[90%]"
+			/>
+			<img
+				src={volunteerImage.src}
+				alt="Volunteers helping children learn together"
+				class="absolute bottom-0 left-0 h-[34%] w-[66%] border-[10px] border-[#FAF7F2] object-cover shadow-[-18px_18px_0_#0F766E] sm:w-[52%] lg:left-2"
+			/>
+			<div class="absolute bottom-20 right-0 max-w-56 bg-[#111827] p-5 text-white lg:right-4">
+				<p class="text-3xl font-black uppercase text-[#DD8A1A]">Show up.</p>
+				<p class="mt-2 text-sm font-bold leading-6">One hour, one lesson, one steady adult can change a child's week.</p>
+			</div>
+		</div>
+	</div>
+</section>

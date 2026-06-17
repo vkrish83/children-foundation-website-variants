@@ -1,0 +1,85 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import DonationTier from "../components/DonationTier.astro";
+---
+
+<Layout>
+
+<Navbar />
+
+<section class="py-20 bg-[#F7F7F3]">
+
+  <div class="max-w-5xl mx-auto px-6 text-center">
+
+    <h1 class="text-5xl font-bold text-[#2F3A45] mb-6">
+      Support A Child's Future
+    </h1>
+
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      Every contribution helps provide learning resources,
+      mentorship and educational opportunities.
+    </p>
+
+  </div>
+
+</section>
+
+<section class="py-20">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <DonationTier
+        amount="500"
+        title="Learning Materials"
+        description="Provide notebooks, stationery and learning supplies."
+      />
+
+      <DonationTier
+        amount="1000"
+        title="After-School Support"
+        description="Help children receive additional learning support."
+      />
+
+      <DonationTier
+        amount="5000"
+        title="Sponsor Education"
+        description="Support a child's educational journey."
+      />
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="py-20 bg-[#F2F8F0]">
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <h2 class="text-4xl font-bold text-[#2F3A45] mb-6">
+      Online Donations Coming Soon
+    </h2>
+
+    <p class="text-lg text-gray-600 mb-8">
+      We are currently setting up secure donation options.
+      If you'd like to support our mission, please contact us.
+    </p>
+
+    <a
+      href="/contact"
+      class="bg-[#5D9C59] text-white px-8 py-4 rounded-full inline-block"
+    >
+      Contact Us
+    </a>
+
+  </div>
+
+</section>
+
+<Footer />
+
+</Layout>

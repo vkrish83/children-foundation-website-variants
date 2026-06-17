@@ -1,0 +1,229 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout>
+
+  <Navbar />
+
+  <!-- Hero -->
+
+  <section class="bg-[#F7F7F3] py-20">
+
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <p class="text-[#5D9C59] font-semibold uppercase mb-4">
+        Join Our Mission
+      </p>
+
+      <h1 class="text-5xl font-bold text-[#2F3A45] mb-6">
+        Become A Volunteer
+      </h1>
+
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Help create brighter futures for children through education,
+        mentorship, community engagement and support.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- Volunteer Opportunities -->
+
+  <section class="py-20">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center text-[#2F3A45] mb-12">
+        Ways You Can Help
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+          <h3 class="text-2xl font-semibold text-[#2F3A45] mb-4">
+            Teaching Support
+          </h3>
+
+          <p class="text-gray-600">
+            Assist children with reading, homework,
+            learning activities and educational programs.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+          <h3 class="text-2xl font-semibold text-[#2F3A45] mb-4">
+            Event Volunteer
+          </h3>
+
+          <p class="text-gray-600">
+            Support workshops, community events,
+            fundraising activities and outreach programs.
+          </p>
+        </div>
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+          <h3 class="text-2xl font-semibold text-[#2F3A45] mb-4">
+            Administrative Support
+          </h3>
+
+          <p class="text-gray-600">
+            Help with planning, communication,
+            documentation and organizational tasks.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Impact -->
+
+  <section class="bg-[#F2F8F0] py-20">
+
+    <div class="max-w-5xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+
+        <div>
+          <h3 class="text-5xl font-bold text-[#5D9C59]">50+</h3>
+          <p class="text-gray-600 mt-3">
+            Active Volunteers
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-5xl font-bold text-[#5D9C59]">1000+</h3>
+          <p class="text-gray-600 mt-3">
+            Children Reached
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-5xl font-bold text-[#5D9C59]">500+</h3>
+          <p class="text-gray-600 mt-3">
+            Volunteer Hours
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Volunteer Form -->
+
+  <section class="py-20">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="grid md:grid-cols-2 gap-12">
+
+        <!-- Left -->
+
+        <div>
+
+          <p class="text-[#5D9C59] font-semibold uppercase">
+            Volunteer With Us
+          </p>
+
+          <h2 class="text-4xl font-bold text-[#2F3A45] mt-4">
+            Share Your Time & Skills
+          </h2>
+
+          <p class="text-gray-600 mt-6">
+            Whether you're a student, professional,
+            teacher or community member, your contribution
+            can make a meaningful difference.
+          </p>
+
+          <div class="mt-10 space-y-6">
+
+            <div>
+              <h3 class="font-semibold text-[#2F3A45]">
+                Flexible Opportunities
+              </h3>
+
+              <p class="text-gray-600">
+                Volunteer according to your availability.
+              </p>
+            </div>
+
+            <div>
+              <h3 class="font-semibold text-[#2F3A45]">
+                Meaningful Impact
+              </h3>
+
+              <p class="text-gray-600">
+                Support children in their educational journey.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="bg-white p-8 rounded-3xl shadow-sm">
+
+          <form class="space-y-5">
+
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="w-full border border-gray-200 rounded-xl p-4"
+            />
+
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="w-full border border-gray-200 rounded-xl p-4"
+            />
+
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              class="w-full border border-gray-200 rounded-xl p-4"
+            />
+
+            <select
+              class="w-full border border-gray-200 rounded-xl p-4"
+            >
+              <option>Select Area of Interest</option>
+              <option>Teaching Support</option>
+              <option>Event Volunteer</option>
+              <option>Administrative Support</option>
+            </select>
+
+            <textarea
+              rows="5"
+              placeholder="Tell us about yourself"
+              class="w-full border border-gray-200 rounded-xl p-4"
+            ></textarea>
+
+            <button
+              class="bg-[#5D9C59] text-white px-8 py-4 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
+            >
+              Submit Interest
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <Footer />
+
+</Layout>

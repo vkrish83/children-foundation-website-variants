@@ -1,0 +1,34 @@
+---
+import heroImage from '../assets/hero-v4.png';
+
+const summary = ['Partnerships', 'Volunteer Inquiries', 'Program Reports', 'General Contact'];
+---
+
+<section class="bg-[#F9FAFB]">
+  <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-6 lg:grid-cols-[1fr_0.78fr] lg:items-center lg:px-8 lg:py-20">
+    <div>
+      <div class="border-b border-gray-200 pb-10">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#2563EB]">Contact</p>
+        <h1 class="mt-4 max-w-5xl text-5xl font-bold leading-[1.05] tracking-normal text-[#111827] sm:text-6xl">
+          Connect With Our Foundation Team.
+        </h1>
+        <p class="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+          For partnerships, volunteering, program inquiries or reporting information, contact the Children First Foundation team.
+        </p>
+      </div>
+
+      <div class="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-gray-700">
+        {summary.map((item, index) => (
+          <>
+            <span>{item}</span>
+            {index < summary.length - 1 && <span class="text-[#2563EB]">/</span>}
+          </>
+        ))}
+      </div>
+    </div>
+
+    <div class="rounded-lg border border-gray-200 bg-white p-3 shadow-sm">
+      <img src={heroImage.src} alt="Children First Foundation program coordination" class="h-full min-h-[320px] w-full rounded-md object-cover" />
+    </div>
+  </div>
+</section>

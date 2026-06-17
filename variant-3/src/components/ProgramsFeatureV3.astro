@@ -1,0 +1,56 @@
+---
+import educationImage from "../assets/programs.png";
+import mentorshipImage from "../assets/dream.png";
+import communityImage from "../assets/volunteer-v3.png";
+
+const programs = [
+  {
+    title: "Education",
+    text: "We help children build foundational skills, stay connected to school and experience learning as a place of possibility.",
+    image: educationImage,
+    alt: "Children taking part in an education program",
+  },
+  {
+    title: "Mentorship",
+    text: "Caring mentors offer consistency, encouragement and the kind of listening that helps a child feel seen.",
+    image: mentorshipImage,
+    alt: "A child imagining a brighter future",
+  },
+  {
+    title: "Community",
+    text: "We work with families, volunteers and local partners so support continues beyond a single classroom or session.",
+    image: communityImage,
+    alt: "Volunteers and children sharing a community moment",
+  },
+];
+---
+
+<section class="bg-[#FAF7F2] py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl space-y-20 px-5 sm:px-6">
+    {programs.map((program, index) => (
+      <article class={`grid items-center gap-12 lg:gap-16 ${index % 2 === 0 ? "lg:grid-cols-[1.08fr_0.92fr]" : "lg:grid-cols-[0.92fr_1.08fr]"}`}>
+        <div class={index % 2 === 0 ? "" : "lg:order-2"}>
+          <img
+            src={program.image.src}
+            alt={program.alt}
+            class={`w-full rounded-[2rem] object-cover lg:rounded-[3rem] ${index === 1 ? "h-[480px] sm:h-[620px]" : "h-[420px] sm:h-[560px]"}`}
+          />
+        </div>
+
+        <div class={index % 2 === 0 ? "lg:pl-4" : "lg:pr-4"}>
+          <p class="text-xs font-semibold uppercase tracking-[0.28em] text-[#D97706] sm:text-sm">
+            0{index + 1}
+          </p>
+
+          <h2 class="mt-5 text-4xl font-bold leading-tight text-[#1F2937] sm:text-5xl md:text-6xl">
+            {program.title}
+          </h2>
+
+          <p class="mt-7 max-w-xl text-lg leading-8 text-[#1F2937]/70 md:text-xl md:leading-9">
+            {program.text}
+          </p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

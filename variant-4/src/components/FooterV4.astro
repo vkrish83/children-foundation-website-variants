@@ -1,0 +1,45 @@
+---
+const links = [
+  { label: 'About', href: '/about' },
+  { label: 'Programs', href: '/programs' },
+  { label: 'Stories', href: '/stories' },
+  { label: 'Founders', href: '/founders' },
+  { label: 'Volunteer', href: '/volunteer' },
+  { label: 'Contact', href: '/contact' },
+];
+---
+
+<footer class="border-t border-gray-200 bg-[#111827] text-white">
+  <div class="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-6 md:grid-cols-[1.2fr_0.8fr_0.8fr] lg:px-8">
+    <div>
+      <div class="flex items-center gap-3">
+        <span class="flex h-10 w-10 items-center justify-center rounded bg-[#2563EB] text-sm font-bold text-white">CF</span>
+        <span class="text-sm font-semibold uppercase tracking-[0.16em]">Children First</span>
+      </div>
+      <p class="mt-5 max-w-md text-sm leading-6 text-gray-300">
+        A foundation homepage variant designed around measurable outcomes, program transparency, and credible reporting.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-semibold uppercase tracking-[0.16em] text-gray-400">Report Sections</h3>
+      <ul class="mt-4 space-y-3 text-sm text-gray-300">
+        {links.map((link) => (
+          <li><a href={link.href} class="hover:text-white">{link.label}</a></li>
+        ))}
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-sm font-semibold uppercase tracking-[0.16em] text-gray-400">Contact</h3>
+      <div class="mt-4 space-y-3 text-sm text-gray-300">
+        <p>hello@example.org</p>
+        <p>Annual Impact Report</p>
+        <p>FY 2026 Foundation Overview</p>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-white/10 px-5 py-5 text-center text-xs text-gray-400">
+    © 2026 Children First Foundation. Impact data shown for homepage concept presentation.
+  </div>
+</footer>

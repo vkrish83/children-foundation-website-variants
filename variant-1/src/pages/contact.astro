@@ -1,0 +1,114 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import SupportBanner from "../components/SupportBanner.astro";
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+---
+
+<Layout>
+  <Navbar />
+
+<section class="py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="grid md:grid-cols-2 gap-12">
+
+      <!-- Left Side -->
+
+      <div>
+        <p class="text-[#5D9C59] font-semibold uppercase">
+          Get In Touch
+        </p>
+
+        <h2 class="text-4xl font-bold text-[#2F3A45] mt-4">
+          We'd Love To Hear From You
+        </h2>
+
+        <p class="text-gray-600 mt-6">
+          Whether you want to volunteer, partner with us,
+          or learn more about our programs, feel free to
+          reach out.
+        </p>
+
+        <div class="mt-10 space-y-6">
+
+          <div>
+            <h3 class="font-semibold text-[#2F3A45]">
+              Email
+            </h3>
+            <p class="text-gray-600">
+              info@childrenfirst.org
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-[#2F3A45]">
+              Phone
+            </h3>
+            <p class="text-gray-600">
+              +91 98765 43210
+            </p>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-[#2F3A45]">
+              Location
+            </h3>
+            <p class="text-gray-600">
+              Chennai, India
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Side -->
+
+      <div class="bg-white p-8 rounded-3xl shadow-sm">
+
+        <form class="space-y-5">
+
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="w-full border border-gray-200 rounded-xl p-4"
+          />
+
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="w-full border border-gray-200 rounded-xl p-4"
+          />
+
+          <input
+            type="tel"
+            placeholder="Phone Number"
+            class="w-full border border-gray-200 rounded-xl p-4"
+          />
+
+          <textarea
+            rows="6"
+            placeholder="Message"
+            class="w-full border border-gray-200 rounded-xl p-4"
+          ></textarea>
+
+          <button
+            class="bg-[#5D9C59] text-white px-8 py-4 rounded-full"
+          >
+            Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+  <SupportBanner />
+
+  <Footer />
+</Layout>

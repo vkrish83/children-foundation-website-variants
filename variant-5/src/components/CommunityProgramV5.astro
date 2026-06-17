@@ -1,0 +1,35 @@
+---
+import heroImage from '../assets/hero-v5.png';
+import programsImage from '../assets/programs.png';
+---
+
+<section id="community" class="bg-white px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="mb-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+			<p class="text-sm font-black uppercase text-[#DD8A1A]">Community program</p>
+			<h2 class="text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+				Families, volunteers and neighbors make the program bigger than a room.
+			</h2>
+		</div>
+
+		<div class="grid gap-5 lg:grid-cols-12">
+			<div class="relative overflow-hidden bg-[#111827] lg:col-span-8">
+				<img src={heroImage.src} alt="Children sitting together outdoors" class="h-[560px] w-full object-cover opacity-90" />
+				<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#111827] to-transparent p-8 pt-24">
+					<p class="max-w-xl text-2xl font-black uppercase leading-tight text-white">
+						Community events turn support into something children can see around them.
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col justify-between bg-[#DD8A1A] p-7 text-[#111827] lg:col-span-4">
+				<div>
+					<h3 class="text-3xl font-black uppercase leading-none">Participation is the program.</h3>
+					<p class="mt-5 text-base font-bold leading-7">
+						Parents join conversations, volunteers organize learning days and local partners help make each gathering feel useful, warm and alive.
+					</p>
+				</div>
+				<img src={programsImage.src} alt="Volunteer surrounded by children" class="mt-8 h-56 w-full object-cover" />
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,32 @@
+---
+const metrics = [
+  { value: '500+', label: 'Children Supported', detail: 'Direct learning and wellbeing support delivered through structured programs.' },
+  { value: '3,200', label: 'Learning Hours', detail: 'Cumulative tutoring, workshops, and guided enrichment sessions.' },
+  { value: '120+', label: 'Active Volunteers', detail: 'Skilled contributors supporting mentoring, operations, and events.' },
+  { value: '86%', label: 'Program Continuity', detail: 'Children retained across recurring foundation touchpoints.' },
+];
+---
+
+<section id="impact" class="border-y border-gray-200 bg-white">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+    <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#0F766E]">Measured Outcomes</p>
+        <h2 class="mt-3 text-3xl font-bold text-[#111827] sm:text-4xl">Impact Metrics</h2>
+      </div>
+      <p class="max-w-xl text-base leading-7 text-gray-600">
+        Reporting clear indicators across reach, learning engagement, volunteer capacity, and continuity.
+      </p>
+    </div>
+
+    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      {metrics.map((metric) => (
+        <article class="rounded-lg border border-gray-200 bg-[#FFFFFF] p-6 shadow-sm shadow-gray-200/70">
+          <p class="text-4xl font-bold text-[#2563EB]">{metric.value}</p>
+          <h3 class="mt-4 text-lg font-semibold text-[#111827]">{metric.label}</h3>
+          <p class="mt-3 text-sm leading-6 text-gray-600">{metric.detail}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

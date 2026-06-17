@@ -1,0 +1,33 @@
+---
+const steps = [
+  { number: '01', label: 'Strategy', text: 'Set foundation priorities and annual impact goals.' },
+  { number: '02', label: 'Program Planning', text: 'Translate priorities into operating plans and resource needs.' },
+  { number: '03', label: 'Delivery Oversight', text: 'Track implementation quality across active communities.' },
+  { number: '04', label: 'Reporting', text: 'Document indicators, outcomes and partner updates.' },
+  { number: '05', label: 'Review', text: 'Use reporting cycles to refine delivery and governance decisions.' },
+];
+---
+
+<section class="border-y border-gray-200 bg-white">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+    <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#0F766E]">Governance Model</p>
+        <h2 class="mt-3 text-3xl font-bold text-[#111827] sm:text-4xl">Leadership Workflow</h2>
+      </div>
+      <p class="max-w-xl text-base leading-7 text-gray-600">
+        A structured review path keeps planning, delivery and reporting connected across each operating cycle.
+      </p>
+    </div>
+
+    <div class="grid gap-4 md:grid-cols-5">
+      {steps.map((step) => (
+        <article class="rounded-lg border border-gray-200 bg-[#F9FAFB] p-5">
+          <p class="text-sm font-bold text-[#F59E0B]">{step.number}</p>
+          <h3 class="mt-4 text-xl font-bold text-[#111827]">{step.label}</h3>
+          <p class="mt-4 border-t border-gray-200 pt-4 text-sm leading-6 text-gray-600">{step.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

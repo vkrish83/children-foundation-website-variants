@@ -1,0 +1,51 @@
+---
+const milestones = [
+  {
+    number: "01",
+    title: "First Day",
+    text: "Priya joined a learning circle quietly, listening before she felt ready to participate.",
+  },
+  {
+    number: "02",
+    title: "Finding Confidence",
+    text: "Week by week, patient support helped her read aloud and ask for help without fear.",
+  },
+  {
+    number: "03",
+    title: "Dreaming Bigger",
+    text: "As confidence grew, Priya began speaking about the future with a new sense of possibility.",
+  },
+];
+---
+
+<section class="bg-[#FAF7F2] py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-5 sm:px-6">
+    <div class="max-w-4xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.28em] text-[#D97706] sm:text-sm">
+        Milestones
+      </p>
+
+      <h2 class="mt-6 text-4xl font-bold leading-tight text-[#1F2937] sm:text-5xl md:text-7xl">
+        Growth often arrives quietly, then stays.
+      </h2>
+    </div>
+
+    <div class="mt-16 divide-y divide-[#1F2937]/15 border-y border-[#1F2937]/15">
+      {milestones.map((milestone) => (
+        <section class="grid gap-6 py-10 md:grid-cols-[180px_320px_1fr] md:items-start md:gap-10">
+          <p class="text-6xl font-bold leading-none text-[#D97706] md:text-7xl">
+            {milestone.number}
+          </p>
+
+          <h3 class="text-3xl font-bold text-[#1F2937] md:text-4xl">
+            {milestone.title}
+          </h3>
+
+          <p class="max-w-2xl text-lg leading-8 text-[#1F2937]/70">
+            {milestone.text}
+          </p>
+        </section>
+      ))}
+    </div>
+  </div>
+</section>

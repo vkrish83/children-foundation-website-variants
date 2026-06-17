@@ -1,0 +1,65 @@
+<section class="bg-[#FAF7F2] py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-5 sm:px-6">
+    <div class="grid gap-12 border-t border-[#1F2937]/15 pt-16 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-[#D97706] sm:text-sm">
+          Send A Message
+        </p>
+
+        <h2 class="mt-6 text-4xl font-bold leading-tight text-[#1F2937] sm:text-5xl md:text-6xl">
+          Tell us how you would like to be involved.
+        </h2>
+      </div>
+
+      <form class="space-y-8">
+        <div>
+          <label for="name" class="block text-sm font-semibold uppercase tracking-[0.18em] text-[#1F2937]">
+            Name
+          </label>
+
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            class="mt-3 w-full border-0 border-b border-[#1F2937]/25 bg-transparent px-0 py-4 text-lg text-[#1F2937] outline-none transition placeholder:text-[#1F2937]/35 focus:border-[#D97706]"
+          />
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-semibold uppercase tracking-[0.18em] text-[#1F2937]">
+            Email
+          </label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            class="mt-3 w-full border-0 border-b border-[#1F2937]/25 bg-transparent px-0 py-4 text-lg text-[#1F2937] outline-none transition placeholder:text-[#1F2937]/35 focus:border-[#D97706]"
+          />
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-semibold uppercase tracking-[0.18em] text-[#1F2937]">
+            Message
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            class="mt-3 w-full resize-y border-0 border-b border-[#1F2937]/25 bg-transparent px-0 py-4 text-lg text-[#1F2937] outline-none transition placeholder:text-[#1F2937]/35 focus:border-[#D97706]"
+          ></textarea>
+        </div>
+
+        <button
+          type="submit"
+          class="rounded-full bg-[#DD8A1A] px-8 py-4 font-semibold text-white transition hover:bg-[#D97706]"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

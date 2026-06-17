@@ -1,0 +1,50 @@
+---
+const responsibilities = ['Strategy', 'Partnerships', 'Program Delivery', 'Volunteer Coordination', 'Reporting'];
+const priorities = [
+  'Maintain clear operating priorities across foundation teams.',
+  'Align partnerships with measurable education outcomes.',
+  'Review program continuity and delivery capacity each cycle.',
+  'Keep reporting channels transparent for donors and communities.',
+  'Coordinate volunteer intake with active program needs.',
+];
+---
+
+<section class="border-y border-gray-200 bg-white">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+    <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#0F766E]">Leadership Overview</p>
+        <h2 class="mt-3 text-3xl font-bold text-[#111827] sm:text-4xl">Operating Responsibilities</h2>
+      </div>
+      <p class="max-w-xl text-base leading-7 text-gray-600">
+        Leadership work is organized around accountable functions and reviewed against program priorities.
+      </p>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-2">
+      <div class="rounded-lg border border-gray-200 bg-[#F9FAFB] p-6 lg:p-8">
+        <h3 class="text-xl font-bold text-[#111827]">Leadership responsibilities</h3>
+        <div class="mt-6 grid gap-3">
+          {responsibilities.map((item) => (
+            <div class="flex items-center justify-between gap-4 border-b border-gray-200 pb-3 last:border-b-0 last:pb-0">
+              <span class="text-sm font-semibold text-gray-700">{item}</span>
+              <span class="h-2 w-12 rounded-full bg-[#2563EB]"></span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="rounded-lg border border-gray-200 bg-[#F9FAFB] p-6 lg:p-8">
+        <h3 class="text-xl font-bold text-[#111827]">Operational priorities</h3>
+        <div class="mt-6 space-y-4">
+          {priorities.map((item, index) => (
+            <div class="flex gap-4">
+              <span class="text-sm font-bold text-[#F59E0B]">{String(index + 1).padStart(2, '0')}</span>
+              <p class="text-sm leading-6 text-gray-600">{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

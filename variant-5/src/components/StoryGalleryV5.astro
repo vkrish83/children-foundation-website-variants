@@ -1,0 +1,34 @@
+---
+import heroImage from '../assets/hero-v5.png';
+import programsImage from '../assets/programs.png';
+import storyImage from '../assets/story-girl.png';
+import volunteerImage from '../assets/volunteer-v5.png';
+import dreamImage from '../assets/dream.png';
+---
+
+<section class="overflow-hidden bg-white px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="mb-12 grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+			<h2 class="text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+				One movement. Many moments in motion.
+			</h2>
+			<p class="max-w-lg text-lg font-semibold leading-8 text-[#1F2937] lg:justify-self-end">
+				A collage of classrooms, courtyard lessons, volunteer circles and the faces that make momentum visible.
+			</p>
+		</div>
+
+		<div class="grid auto-rows-[150px] grid-cols-2 gap-4 md:grid-cols-8 md:auto-rows-[128px] lg:auto-rows-[148px]">
+			<img src={programsImage.src} alt="A volunteer laughing with children in a learning circle" class="col-span-2 row-span-3 h-full w-full object-cover md:col-span-4 md:row-span-4" />
+			<div class="col-span-2 row-span-1 flex items-center bg-[#DD8A1A] p-5 text-[#111827] md:col-span-2 md:row-span-2">
+				<p class="text-4xl font-black uppercase leading-none">Raise hands. Raise futures.</p>
+			</div>
+			<img src={storyImage.src} alt="A schoolgirl smiling with notebooks" class="row-span-2 h-full w-full object-cover md:col-span-2 md:row-span-3" />
+			<img src={heroImage.src} alt="Children sitting outdoors with notebooks" class="col-span-2 row-span-2 h-full w-full object-cover md:col-span-4 md:row-span-2" />
+			<img src={volunteerImage.src} alt="Volunteers helping children with written lessons" class="row-span-2 h-full w-full object-cover md:col-span-3 md:row-span-3" />
+			<div class="flex items-center bg-[#111827] p-5 text-white md:col-span-1 md:row-span-1">
+				<p class="text-2xl font-black uppercase leading-none text-[#DD8A1A]">Join in</p>
+			</div>
+			<img src={dreamImage.src} alt="Children and a mentor writing in notebooks inside a classroom" class="col-span-2 row-span-2 h-full w-full object-cover md:col-span-5 md:row-span-2" />
+		</div>
+	</div>
+</section>

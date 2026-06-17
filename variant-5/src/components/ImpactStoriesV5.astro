@@ -1,0 +1,33 @@
+---
+import storyImage from '../assets/story-girl.png';
+---
+
+<section id="stories" class="bg-white px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.08fr_0.92fr] lg:items-center">
+		<div class="relative">
+			<div class="absolute -left-5 -top-5 h-28 w-28 bg-[#DD8A1A]"></div>
+			<img
+				src={storyImage.src}
+				alt="A smiling schoolgirl holding books"
+				class="relative h-[560px] w-full object-cover object-center"
+			/>
+			<div class="absolute -bottom-6 right-0 bg-[#0F766E] p-6 text-white sm:right-10">
+				<p class="text-sm font-black uppercase">Story spotlight</p>
+				<p class="mt-1 text-2xl font-black uppercase">Confidence in motion</p>
+			</div>
+		</div>
+
+		<div class="lg:pl-10">
+			<p class="mb-5 text-sm font-black uppercase text-[#DD8A1A]">Impact stories</p>
+			<h2 class="text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+				A notebook became a reason to raise her hand.
+			</h2>
+			<p class="mt-7 text-lg font-medium leading-8 text-[#1F2937]">
+				With regular study support and a mentor who kept showing up, one quiet student began reading aloud, helping classmates and walking into school with a little more certainty each week.
+			</p>
+			<a href="/stories" class="mt-8 inline-flex bg-[#111827] px-7 py-4 text-sm font-black uppercase text-white transition hover:bg-[#0F766E]">
+				Read More Stories
+			</a>
+		</div>
+	</div>
+</section>

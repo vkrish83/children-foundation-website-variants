@@ -1,0 +1,62 @@
+---
+import educationImage from "../assets/programs.png";
+import mentorImage from "../assets/dream.png";
+import communityImage from "../assets/volunteer-v3.png";
+
+const programs = [
+  {
+    title: "Education",
+    text: "Learning support, school materials and guided programs that help children build confidence.",
+    image: educationImage,
+  },
+  {
+    title: "Mentorship",
+    text: "Caring volunteers who guide, listen and encourage children through every step.",
+    image: mentorImage,
+  },
+  {
+    title: "Community",
+    text: "Local support systems that help families and children move forward together.",
+    image: communityImage,
+  },
+];
+---
+
+<section class="bg-[#FAF7F2] py-20 sm:py-24">
+  <div class="mx-auto max-w-7xl px-5 sm:px-6">
+    <div class="mb-14 max-w-4xl">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.28em] text-[#D97706] sm:text-sm">
+          What We Do
+        </p>
+
+        <h2 class="mt-5 text-4xl font-bold leading-tight text-[#1F2937] sm:text-5xl md:text-6xl">
+          Three Ways We Help
+          Children Move Forward.
+        </h2>
+      </div>
+    </div>
+
+    <div class="grid gap-9 md:grid-cols-3">
+      {programs.map((program) => (
+        <article class="group">
+          <div class="overflow-hidden rounded-[1.75rem] bg-white">
+            <img
+              src={program.image.src}
+              alt={program.title}
+              class="h-[360px] w-full object-cover transition duration-500 group-hover:scale-105 md:h-[430px]"
+            />
+          </div>
+
+          <h3 class="mt-6 text-3xl font-bold text-[#1F2937]">
+            {program.title}
+          </h3>
+
+          <p class="mt-4 leading-7 text-[#1F2937]/70">
+            {program.text}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

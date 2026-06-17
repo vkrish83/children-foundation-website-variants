@@ -1,0 +1,37 @@
+---
+import storyImage from "../assets/featured-story-v2.png";
+---
+
+<section class="bg-[#FAFAF8] py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid gap-12 md:grid-cols-2 md:items-center">
+      <div>
+        <p class="text-[#5D9C59] uppercase tracking-[0.2em] text-sm font-semibold">
+          Featured Story
+        </p>
+
+        <h2 class="mt-5 text-4xl md:text-5xl font-bold text-[#2F3A45] leading-tight">
+          Meet Priya
+        </h2>
+
+        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+          Priya arrived at our learning center quiet and unsure of her abilities. With steady education support, patient mentorship and encouragement from volunteers, she began reading aloud, asking questions and believing in her own progress.
+        </p>
+
+        <a
+          href="/stories"
+          class="inline-flex mt-8 text-[#5D9C59] font-semibold transition-colors duration-300 hover:text-[#2F3A45]"
+        >
+          Read more stories
+        </a>
+      </div>
+
+        <img
+          src={storyImage.src}
+          alt="Student Success Story"
+          class="w-full rounded-3xl object-cover"
+        />
+
+    </div>
+  </div>
+</section>

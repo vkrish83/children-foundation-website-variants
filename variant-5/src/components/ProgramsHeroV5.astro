@@ -1,0 +1,38 @@
+---
+import programsImage from '../assets/programs.png';
+import heroImage from '../assets/hero-v5.png';
+---
+
+<section class="relative overflow-hidden bg-[#FAF7F2] px-5 py-16 lg:px-8 lg:py-24">
+	<div class="absolute left-0 top-28 hidden h-28 w-2/5 bg-[#0F766E] lg:block"></div>
+	<div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+		<div class="relative z-10">
+			<p class="mb-5 inline-flex bg-[#DD8A1A] px-4 py-2 text-xs font-black uppercase text-[#111827]">
+				Programs
+			</p>
+			<h1 class="text-5xl font-black uppercase leading-[0.95] text-[#111827] sm:text-6xl lg:text-7xl xl:text-8xl">
+				Programs Designed Around People.
+			</h1>
+			<p class="mt-7 max-w-xl text-lg font-medium leading-8 text-[#1F2937]">
+				Each program is built around real relationships: children learning, volunteers showing up, families participating and communities moving together.
+			</p>
+		</div>
+
+		<div class="relative min-h-[520px] lg:min-h-[640px]">
+			<img
+				src={programsImage.src}
+				alt="Volunteer and children laughing during a learning session"
+				class="absolute right-0 top-8 h-[68%] w-[90%] object-cover shadow-[18px_18px_0_#DD8A1A] lg:top-10"
+			/>
+			<img
+				src={heroImage.src}
+				alt="Children sitting together with notebooks"
+				class="absolute bottom-0 left-0 h-[32%] w-[52%] border-[10px] border-[#FAF7F2] object-cover shadow-[-18px_18px_0_#0F766E]"
+			/>
+			<div class="absolute bottom-14 right-3 max-w-56 bg-[#111827] p-6 text-white">
+				<p class="text-sm font-black uppercase text-[#DD8A1A]">Experience first</p>
+				<p class="mt-2 text-2xl font-black uppercase leading-none">Support that feels close.</p>
+			</div>
+		</div>
+	</div>
+</section>

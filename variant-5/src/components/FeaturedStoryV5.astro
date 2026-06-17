@@ -1,0 +1,42 @@
+---
+import storyImage from '../assets/story-girl.png';
+---
+
+<section id="featured-story" class="overflow-hidden bg-[#FAF7F2] px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+		<div class="relative min-h-[620px]">
+			<div class="absolute left-0 top-0 h-36 w-36 bg-[#DD8A1A]"></div>
+			<img
+				src={storyImage.src}
+				alt="A smiling schoolgirl holding notebooks outside school"
+				class="absolute right-0 top-8 h-[76%] w-[86%] object-cover shadow-[18px_18px_0_#111827]"
+			/>
+			<div class="absolute bottom-0 left-0 max-w-sm bg-[#0F766E] p-6 text-white shadow-[14px_14px_0_#DD8A1A]">
+				<p class="text-sm font-black uppercase text-[#FAF7F2]">Featured child story</p>
+				<p class="mt-3 text-3xl font-black uppercase leading-none">A small yes became a louder voice.</p>
+			</div>
+		</div>
+
+		<div class="relative">
+			<p class="mb-5 text-sm font-black uppercase text-[#0F766E]">Notebook to nerve</p>
+			<h2 class="text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+				A Notebook Became
+				<span class="text-[#DD8A1A]">A Reason To Raise Her Hand.</span>
+			</h2>
+			<div class="mt-8 space-y-6 text-lg font-medium leading-8 text-[#1F2937]">
+				<p>
+					She used to keep answers to herself. Then a volunteer sat beside her week after week, turning homework time into a place where trying felt possible.
+				</p>
+				<p>
+					The notebook filled first. Then came the first question, the first read-aloud sentence, and the first day she helped another child finish a lesson.
+				</p>
+			</div>
+			<div class="mt-9 flex flex-col gap-4 border-l-8 border-[#DD8A1A] bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
+				<p class="max-w-md text-2xl font-black uppercase leading-tight text-[#111827]">Confidence grows faster when a community keeps showing up.</p>
+				<a href="/volunteer" class="shrink-0 bg-[#111827] px-6 py-4 text-center text-sm font-black uppercase text-white transition hover:bg-[#0F766E]">
+					Show Up
+				</a>
+			</div>
+		</div>
+	</div>
+</section>

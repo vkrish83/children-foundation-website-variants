@@ -1,0 +1,96 @@
+<nav class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center py-3">
+    <div class="flex items-center gap-3">
+      
+      <a href="/" class="flex items-center gap-1.5 transition-all duration-300 hover:opacity-90">
+
+        <div
+        class="w-10 h-10 rounded-full bg-[#5D9C59]
+              flex items-center justify-center
+              text-white font-bold
+              transition-all duration-300
+              group-hover:scale-105"
+        >
+          CF
+        </div>
+
+        <div class="leading-tight">
+          <div
+            class="font-bold text-[#2F3A45]">
+            Children First
+          </div>
+
+          <div class="text-xs text-gray-500">
+            Foundation
+          </div>
+        </div>
+
+      </a>
+      
+    </div>
+
+    <ul class="hidden md:flex items-center gap-6 text-sm text-[#2F3A45] font-medium">
+      <li><a href="/" class="transition-colors duration-300 hover:text-[#5D9C59]">Home</a></li>
+      <li><a href="/about" class="transition-colors duration-300 hover:text-[#5D9C59]">About</a></li>
+      <li><a href="/programs" class="transition-colors duration-300 hover:text-[#5D9C59]">Programs</a></li>
+      <li><a href="/stories" class="transition-colors duration-300 hover:text-[#5D9C59]">Stories</a></li>
+      <li><a href="/contact" class="transition-colors duration-300 hover:text-[#5D9C59]">Contact</a></li>
+      <li><a href="/founders" class="transition-colors duration-300 hover:text-[#5D9C59]">Founders</a></li>
+    </ul>
+    <a
+      href="/donate"
+      class="hidden md:inline-flex bg-[#F4A261] text-white text-lg px-8 py-4 rounded-full font-semibold
+            transition-all duration-300
+            hover:bg-[#E8924B]
+            hover:shadow-xl
+            hover:scale-105"
+    >
+      Donate
+    </a>
+
+    <button
+      id="menu-btn"
+      class="md:hidden text-3xl text-[#2F3A45]"
+    >
+      ☰
+    </button>
+  </div>
+  <div
+  id="mobile-menu"
+  class="hidden md:hidden px-6 pb-6"
+  >
+  <div class="flex flex-col gap-4 text-[#2F3A45] font-medium">
+
+    <a href="/" class="hover:text-[#5D9C59]">Home</a>
+    <a href="/about" class="hover:text-[#5D9C59]">About</a>
+    <a href="/programs" class="hover:text-[#5D9C59]">Programs</a>
+    <a href="/stories" class="hover:text-[#5D9C59]">Stories</a>
+    <a href="/contact" class="hover:text-[#5D9C59]">Contact</a>
+    <a href="/founders" class="hover:text-[#5D9C59]">Founders</a>
+    <a href="/volunteer" class="hover:text-[#5D9C59]">Volunteer</a>
+
+    <a
+      href="/donate"
+      class="w-fit bg-[#F4A261] text-white px-6 py-3 rounded-full"
+    >
+      Donate
+    </a>
+
+  </div>
+</div>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn?.addEventListener("click", () => {
+    mobileMenu?.classList.toggle("hidden");
+
+    menuBtn.textContent =
+      mobileMenu?.classList.contains("hidden")
+        ? "☰"
+        : "✕";
+  });
+</script>
+
+</nav>

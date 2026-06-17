@@ -1,0 +1,21 @@
+---
+import dreamImage from '../assets/dream.png';
+---
+
+<section class="overflow-hidden bg-[#111827] px-5 py-20 text-white lg:px-8 lg:py-28">
+	<div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+		<div>
+			<p class="mb-8 text-sm font-black uppercase text-[#DD8A1A]">Our mission</p>
+			<h2 class="text-4xl font-black uppercase leading-none sm:text-6xl lg:text-7xl">
+				We surround children with learning, mentorship and community support so confidence can grow every day.
+			</h2>
+		</div>
+		<div class="relative">
+			<div class="absolute -right-5 -top-5 h-28 w-28 bg-[#DD8A1A]"></div>
+			<img src={dreamImage.src} alt="Children learning together in a classroom" class="relative h-[520px] w-full object-cover" />
+			<p class="absolute -bottom-6 left-0 max-w-sm bg-[#FAF7F2] p-6 text-lg font-black uppercase leading-tight text-[#111827]">
+				Every lesson is also a signal: you belong here.
+			</p>
+		</div>
+	</div>
+</section>

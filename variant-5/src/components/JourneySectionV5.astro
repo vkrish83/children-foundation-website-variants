@@ -1,0 +1,46 @@
+---
+const steps = [
+	{
+		title: 'Join',
+		text: 'A child, family or volunteer enters the circle and is welcomed by name.',
+	},
+	{
+		title: 'Learn',
+		text: 'Children practice, ask questions and build steady habits with support around them.',
+	},
+	{
+		title: 'Grow',
+		text: 'Confidence starts showing up in school, friendships and everyday choices.',
+	},
+	{
+		title: 'Lead',
+		text: 'Children begin helping others, sharing their voice and shaping the movement too.',
+	},
+];
+---
+
+<section class="bg-[#FAF7F2] px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+			<div>
+				<p class="mb-5 text-sm font-black uppercase text-[#0F766E]">The journey</p>
+				<h2 class="max-w-3xl text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+					A path children can move through with people beside them.
+				</h2>
+			</div>
+			<p class="max-w-md text-lg font-medium leading-8 text-[#1F2937]">
+				The journey is not a funnel or a table. It is a living progression of participation, confidence and shared responsibility.
+			</p>
+		</div>
+
+		<div class="grid gap-4 md:grid-cols-4">
+			{steps.map((step, index) => (
+				<div class={`min-h-72 p-7 ${index === 1 ? 'bg-[#0F766E] text-white md:translate-y-10' : index === 3 ? 'bg-[#111827] text-white md:translate-y-6' : 'bg-white text-[#111827]'}`}>
+					<p class="mb-8 text-sm font-black uppercase text-[#DD8A1A]">0{index + 1}</p>
+					<h3 class="text-4xl font-black uppercase leading-none">{step.title}</h3>
+					<p class="mt-6 text-base font-bold leading-7 opacity-80">{step.text}</p>
+				</div>
+			))}
+		</div>
+	</div>
+</section>

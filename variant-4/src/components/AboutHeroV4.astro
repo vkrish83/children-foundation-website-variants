@@ -1,0 +1,47 @@
+---
+import heroImage from '../assets/hero-v4.png';
+
+const facts = [
+  { label: 'Founded', value: '2018' },
+  { label: 'Communities', value: '8' },
+  { label: 'Children', value: '500+' },
+  { label: 'Volunteers', value: '120+' },
+];
+---
+
+<section class="bg-[#F9FAFB]">
+  <div class="mx-auto grid max-w-7xl gap-10 px-5 py-16 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:py-24">
+    <div class="flex flex-col justify-center">
+      <p class="mb-5 inline-flex w-fit rounded-full border border-blue-200 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#2563EB]">
+        Foundation Overview
+      </p>
+      <h1 class="max-w-3xl text-5xl font-bold leading-[1.05] tracking-normal text-[#111827] sm:text-6xl">
+        Building Sustainable Impact Through Education.
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-gray-600">
+        Children First Foundation operates through structured educational, mentoring and community support programs designed for measurable outcomes.
+      </p>
+    </div>
+
+    <div class="grid gap-5">
+      <div class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+        <img src={heroImage.src} alt="Children First Foundation program participants" class="h-64 w-full object-cover sm:h-80" />
+      </div>
+
+      <div class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+        <div class="mb-5 flex items-center justify-between border-b border-gray-200 pb-4">
+          <h2 class="text-lg font-bold text-[#111827]">Quick Organization Facts</h2>
+          <span class="rounded bg-blue-50 px-3 py-1 text-xs font-semibold text-[#2563EB]">FY 2026</span>
+        </div>
+        <dl class="space-y-4">
+          {facts.map((fact) => (
+            <div class="flex items-center justify-between gap-6">
+              <dt class="text-sm font-medium text-gray-600">{fact.label}</dt>
+              <dd class="text-xl font-bold text-[#111827]">{fact.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>

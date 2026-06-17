@@ -1,0 +1,70 @@
+---
+import programsImage from '../assets/programs.png';
+import dreamImage from '../assets/dream.png';
+import volunteerImage from '../assets/volunteer-v4.png';
+
+const cases = [
+  {
+    title: 'Education Support',
+    image: programsImage,
+    challenge: 'Gaps in regular learning access and reading practice.',
+    intervention: 'After-school sessions with progress reviews.',
+    result: 'Improved attendance and stronger reading confidence.',
+  },
+  {
+    title: 'Mentorship',
+    image: dreamImage,
+    challenge: 'Limited guidance between school and home environments.',
+    intervention: 'Volunteer-led check-ins and goal-setting sessions.',
+    result: 'Higher confidence and more consistent participation.',
+  },
+  {
+    title: 'Community Support',
+    image: volunteerImage,
+    challenge: 'Fragmented family coordination and local resource access.',
+    intervention: 'Local partner collaboration and monthly follow-ups.',
+    result: 'Stronger support networks across participating communities.',
+  },
+];
+---
+
+<section class="bg-[#F9FAFB]">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+    <div class="mb-10 max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#2563EB]">Case Review Set</p>
+      <h2 class="mt-3 text-3xl font-bold text-[#111827] sm:text-4xl">Program Case Studies</h2>
+      <p class="mt-4 text-base leading-7 text-gray-600">
+        Compact case summaries organized by program stream and reviewed outcome.
+      </p>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-3">
+      {cases.map((item) => (
+        <article class="rounded-lg border border-gray-200 bg-white shadow-sm">
+          <div class="grid grid-cols-[0.38fr_0.62fr] border-b border-gray-200">
+            <img src={item.image.src} alt={`${item.title} case study`} class="h-full min-h-40 w-full object-cover" />
+            <div class="p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-[#0F766E]">Case Study</p>
+              <h3 class="mt-3 text-xl font-bold text-[#111827]">{item.title}</h3>
+            </div>
+          </div>
+
+          <div class="divide-y divide-gray-200">
+            <div class="p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500">Challenge</p>
+              <p class="mt-2 text-sm leading-6 text-gray-600">{item.challenge}</p>
+            </div>
+            <div class="p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500">Intervention</p>
+              <p class="mt-2 text-sm leading-6 text-gray-600">{item.intervention}</p>
+            </div>
+            <div class="p-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500">Result</p>
+              <p class="mt-2 text-sm leading-6 text-gray-600">{item.result}</p>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

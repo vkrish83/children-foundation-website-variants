@@ -1,0 +1,34 @@
+---
+const details = [
+  {
+    title: "Email",
+    value: "info@childrenfirst.org",
+  },
+  {
+    title: "Phone",
+    value: "+91 98765 43210",
+  },
+  {
+    title: "Location",
+    value: "Chennai, India",
+  },
+];
+---
+
+<section class="bg-[#FAFAF8] py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <div class="grid gap-12 md:grid-cols-3">
+      {details.map((detail) => (
+        <article class="border-t border-gray-200 pt-8">
+          <h2 class="text-3xl font-bold text-[#2F3A45]">
+            {detail.title}
+          </h2>
+
+          <p class="mt-5 text-xl text-gray-600 leading-relaxed">
+            {detail.value}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

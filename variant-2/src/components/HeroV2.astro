@@ -1,0 +1,60 @@
+---
+import heroImage from "../assets/hero-v2.png";
+---
+
+<section class="relative min-h-[calc(100vh-80px)] overflow-hidden">
+
+  <!-- Background Image -->
+  <img
+    src={heroImage.src}
+    alt="Children learning"
+    class="absolute inset-0 w-full h-full object-cover object-right"
+  />
+
+  <!-- Light overlay for text readability -->
+  <div
+        class="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent"
+  ></div>
+
+  <!-- Content -->
+  <div class="relative max-w-7xl mx-auto px-6 py-10">
+
+    <div class="max-w-2xl">
+
+      <p class="uppercase tracking-[0.25em] text-[#5D9C59] text-sm font-semibold">
+        Education • Opportunity • Growth
+      </p>
+
+      <h1 class="text-5xl md:text-[5rem] font-bold text-[#2F3A45] leading-tight">
+        Every Child
+        Deserves The
+        Chance To Learn
+      </h1>
+
+      <p class="mt-8 text-xl text-gray-700 leading-relaxed">
+        Helping children discover opportunities, build confidence and create brighter futures through education and community support.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+
+        <a
+          href="/programs"
+          class="bg-[#5D9C59] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 hover:scale-105"
+        >
+          Explore Programs
+        </a>
+
+        <a
+          href="/stories"
+          class="border border-[#5D9C59] text-[#5D9C59] px-8 py-4 rounded-full font-medium transition-all duration-300 hover:bg-[#5D9C59] hover:text-white"
+        >
+          Read Stories
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

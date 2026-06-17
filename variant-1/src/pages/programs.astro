@@ -1,0 +1,100 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import CallToAction from "../components/CallToAction.astro";
+---
+
+<Layout>
+  <Navbar />
+
+  <section class="bg-[#FFFDF7] py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-6xl font-bold text-[#2F3A45]">
+        Our Programs
+      </h1>
+
+      <p class="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">
+        We help children unlock their potential through
+        education, mentorship and community support.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6 space-y-10">
+
+      <div class="bg-white rounded-3xl shadow-sm p-10">
+        <h2 class="text-3xl font-bold text-[#2F3A45] mb-4">
+          📚 Education Support
+        </h2>
+
+        <p class="text-gray-600 mb-6">
+          Providing learning materials, tutoring support
+          and academic guidance to help children succeed.
+        </p>
+
+        <ul class="list-disc ml-6 text-gray-600 space-y-2">
+          <li>School supplies and books</li>
+          <li>Academic mentoring</li>
+          <li>Learning assistance programs</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-sm p-10">
+        <h2 class="text-3xl font-bold text-[#2F3A45] mb-4">
+          🏫 School Readiness
+        </h2>
+
+        <p class="text-gray-600 mb-6">
+          Helping young children prepare for a successful
+          transition into formal education.
+        </p>
+
+        <ul class="list-disc ml-6 text-gray-600 space-y-2">
+          <li>Early learning activities</li>
+          <li>Language development</li>
+          <li>Confidence building</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-sm p-10">
+        <h2 class="text-3xl font-bold text-[#2F3A45] mb-4">
+          🎨 Creative Learning
+        </h2>
+
+        <p class="text-gray-600 mb-6">
+          Encouraging creativity through art, storytelling,
+          music and hands-on learning experiences.
+        </p>
+
+        <ul class="list-disc ml-6 text-gray-600 space-y-2">
+          <li>Art and craft workshops</li>
+          <li>Reading circles</li>
+          <li>Creative expression activities</li>
+        </ul>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-sm p-10">
+        <h2 class="text-3xl font-bold text-[#2F3A45] mb-4">
+          💻 Digital Literacy
+        </h2>
+
+        <p class="text-gray-600 mb-6">
+          Introducing children to technology and digital
+          tools that prepare them for the future.
+        </p>
+
+        <ul class="list-disc ml-6 text-gray-600 space-y-2">
+          <li>Basic computer skills</li>
+          <li>Online learning resources</li>
+          <li>Digital awareness and safety</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <CallToAction />
+  <Footer />
+</Layout>

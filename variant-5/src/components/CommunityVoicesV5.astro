@@ -1,0 +1,49 @@
+---
+const voices = [
+	{
+		role: 'Child',
+		quote: 'Now I ask questions before the bell rings.',
+		name: 'Aarohi, student',
+	},
+	{
+		role: 'Volunteer',
+		quote: 'The win is watching confidence arrive in real time.',
+		name: 'Meera, mentor',
+	},
+	{
+		role: 'Parent',
+		quote: 'My daughter comes home ready to teach us what she learned.',
+		name: 'Ravi, parent',
+	},
+];
+---
+
+<section id="voices" class="bg-[#FAF7F2] px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+			<div>
+				<p class="mb-4 text-sm font-black uppercase text-[#0F766E]">Community voices</p>
+				<h2 class="max-w-3xl text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+					Short voices. Big proof.
+				</h2>
+			</div>
+			<p class="max-w-sm text-base font-bold leading-7 text-[#1F2937]">
+				The movement sounds like children, volunteers and families naming what changed.
+			</p>
+		</div>
+
+		<div class="grid gap-5 lg:grid-cols-[0.9fr_1.2fr_0.9fr]">
+			{voices.map((voice, index) => (
+				<article class={`border-2 border-[#111827] bg-white p-7 shadow-[10px_10px_0_#DD8A1A] ${index === 1 ? 'lg:-mt-8 lg:bg-[#111827] lg:text-white lg:shadow-[10px_10px_0_#0F766E]' : ''}`}>
+					<p class={`inline-flex px-3 py-2 text-xs font-black uppercase ${index === 1 ? 'bg-[#DD8A1A] text-[#111827]' : 'bg-[#111827] text-white'}`}>
+						{voice.role}
+					</p>
+					<blockquote class="mt-8 text-3xl font-black uppercase leading-tight sm:text-4xl">
+						"{voice.quote}"
+					</blockquote>
+					<p class={`mt-8 text-sm font-black uppercase ${index === 1 ? 'text-[#DD8A1A]' : 'text-[#0F766E]'}`}>{voice.name}</p>
+				</article>
+			))}
+		</div>
+	</div>
+</section>

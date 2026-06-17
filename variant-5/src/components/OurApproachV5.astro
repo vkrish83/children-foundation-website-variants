@@ -1,0 +1,53 @@
+---
+import programsImage from '../assets/programs.png';
+import volunteerImage from '../assets/volunteer-v5.png';
+import heroImage from '../assets/hero-v5.png';
+
+const pillars = [
+	{
+		title: 'Learn',
+		text: 'Create active spaces where children can ask questions, practice skills and feel proud of progress.',
+		image: programsImage,
+		classes: 'lg:col-span-7',
+		imageClasses: 'h-80 lg:h-[460px]',
+	},
+	{
+		title: 'Connect',
+		text: 'Bring mentors, volunteers and families into steady relationships that make support visible.',
+		image: volunteerImage,
+		classes: 'lg:col-span-5',
+		imageClasses: 'h-72 lg:h-[340px]',
+	},
+	{
+		title: 'Grow',
+		text: 'Help children carry confidence beyond one class, one program or one afternoon.',
+		image: heroImage,
+		classes: 'lg:col-span-8 lg:col-start-3',
+		imageClasses: 'h-80 lg:h-[360px]',
+	},
+];
+---
+
+<section class="bg-[#FAF7F2] px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="mb-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+			<p class="text-sm font-black uppercase text-[#0F766E]">Our approach</p>
+			<h2 class="text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+				Children move forward when support moves with them.
+			</h2>
+		</div>
+
+		<div class="grid gap-5 lg:grid-cols-12">
+			{pillars.map((pillar, index) => (
+				<article class={`group relative overflow-hidden bg-[#111827] ${pillar.classes}`}>
+					<img src={pillar.image.src} alt={`${pillar.title} pillar`} class={`w-full object-cover opacity-80 transition duration-500 group-hover:scale-105 ${pillar.imageClasses}`} />
+					<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#111827] via-[#111827]/75 to-transparent p-6 pt-24 lg:p-8">
+						<p class="mb-3 text-sm font-black uppercase text-[#DD8A1A]">0{index + 1}</p>
+						<h3 class="text-4xl font-black uppercase text-white sm:text-5xl">{pillar.title}</h3>
+						<p class="mt-3 max-w-lg text-base font-semibold leading-7 text-white/85">{pillar.text}</p>
+					</div>
+				</article>
+			))}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,55 @@
+---
+import programsImage from '../assets/programs.png';
+import dreamImage from '../assets/dream.png';
+import volunteerImage from '../assets/volunteer-v5.png';
+
+const programs = [
+	{
+		title: 'Education',
+		text: 'Learning circles, school support and joyful study spaces that keep children connected to opportunity.',
+		image: programsImage,
+		classes: 'lg:col-span-7 lg:row-span-2',
+		imageClasses: 'h-80 lg:h-[520px]',
+	},
+	{
+		title: 'Mentorship',
+		text: 'Consistent adults who help children set goals, ask better questions and believe in the next step.',
+		image: dreamImage,
+		classes: 'lg:col-span-5',
+		imageClasses: 'h-72',
+	},
+	{
+		title: 'Community',
+		text: 'Parents, volunteers and local partners working side by side so support surrounds the child.',
+		image: volunteerImage,
+		classes: 'lg:col-span-5',
+		imageClasses: 'h-72',
+	},
+];
+---
+
+<section id="programs" class="overflow-hidden bg-[#FAF7F2] px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="mb-12 flex flex-col gap-5 md:flex-row md:items-end md:justify-between">
+			<h2 class="max-w-3xl text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+				Three ways the community shows up.
+			</h2>
+			<a href="/programs" class="w-fit border-2 border-[#111827] px-5 py-3 text-sm font-black uppercase text-[#111827] hover:bg-[#DD8A1A]">
+				Explore Programs
+			</a>
+		</div>
+
+		<div class="grid gap-5 lg:grid-cols-12">
+			{programs.map((program, index) => (
+				<article class={`group relative overflow-hidden bg-[#111827] ${program.classes}`}>
+					<img src={program.image.src} alt={`${program.title} program`} class={`w-full object-cover opacity-80 transition duration-500 group-hover:scale-105 ${program.imageClasses}`} />
+					<div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#111827] via-[#111827]/70 to-transparent p-6 pt-24 lg:p-8">
+						<p class="mb-3 text-sm font-black uppercase text-[#DD8A1A]">0{index + 1}</p>
+						<h3 class="text-4xl font-black uppercase text-white">{program.title}</h3>
+						<p class="mt-3 max-w-lg text-base font-semibold leading-7 text-white/85">{program.text}</p>
+					</div>
+				</article>
+			))}
+		</div>
+	</div>
+</section>

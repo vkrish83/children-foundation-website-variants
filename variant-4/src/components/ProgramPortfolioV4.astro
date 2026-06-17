@@ -1,0 +1,99 @@
+---
+const programs = [
+  {
+    program: 'Education Support',
+    focus: 'Learning access and reading confidence',
+    reach: '500+ children',
+    model: 'After-school sessions',
+    outcome: 'Improved attendance and confidence',
+  },
+  {
+    program: 'Mentorship',
+    focus: 'Guidance and emotional support',
+    reach: '120+ mentor connections',
+    model: 'Volunteer-led check-ins',
+    outcome: 'Higher confidence and consistency',
+  },
+  {
+    program: 'Community Support',
+    focus: 'Family and local coordination',
+    reach: '8 communities',
+    model: 'Local partner collaboration',
+    outcome: 'Stronger support networks',
+  },
+];
+
+const details = [
+  {
+    title: 'Education Support',
+    status: 'Highest Reach',
+    accent: 'text-[#2563EB]',
+    text: 'Structured learning sessions focus on attendance consistency, reading confidence, and recurring academic support.',
+  },
+  {
+    title: 'Mentorship',
+    status: 'Active',
+    accent: 'text-[#0F766E]',
+    text: 'Volunteer check-ins provide guidance, routine encouragement, and continuity across monthly program cycles.',
+  },
+  {
+    title: 'Community Support',
+    status: 'Local Delivery',
+    accent: 'text-[#F59E0B]',
+    text: 'Local coordination links families, venues, partners, and field teams so program support remains practical.',
+  },
+];
+---
+
+<section class="border-y border-gray-200 bg-white">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+    <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#0F766E]">Portfolio Structure</p>
+        <h2 class="mt-3 text-3xl font-bold text-[#111827] sm:text-4xl">Active Program Streams</h2>
+      </div>
+      <p class="max-w-xl text-base leading-7 text-gray-600">
+        A comparison of program streams by operating focus, reach, delivery model, and tracked outcome.
+      </p>
+    </div>
+
+    <div class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+      <div class="overflow-x-auto">
+        <table class="min-w-[920px] w-full border-collapse text-left">
+          <thead class="bg-[#F9FAFB] text-xs font-semibold uppercase tracking-[0.14em] text-gray-500">
+            <tr>
+              <th class="border-b border-gray-200 px-5 py-4">Program</th>
+              <th class="border-b border-gray-200 px-5 py-4">Primary Focus</th>
+              <th class="border-b border-gray-200 px-5 py-4">Reach</th>
+              <th class="border-b border-gray-200 px-5 py-4">Delivery Model</th>
+              <th class="border-b border-gray-200 px-5 py-4">Key Outcome</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 text-sm">
+            {programs.map((item) => (
+              <tr class="align-top">
+                <td class="px-5 py-5 font-bold text-[#111827]">{item.program}</td>
+                <td class="px-5 py-5 text-gray-600">{item.focus}</td>
+                <td class="px-5 py-5 font-semibold text-[#2563EB]">{item.reach}</td>
+                <td class="px-5 py-5 text-gray-600">{item.model}</td>
+                <td class="px-5 py-5 text-gray-600">{item.outcome}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="mt-6 grid gap-4 lg:grid-cols-3">
+      {details.map((detail) => (
+        <article class="rounded-lg border border-gray-200 bg-[#F9FAFB] p-5">
+          <div class="flex items-center justify-between gap-4">
+            <h3 class="text-lg font-bold text-[#111827]">{detail.title}</h3>
+            <span class={`text-xs font-semibold uppercase tracking-[0.14em] ${detail.accent}`}>{detail.status}</span>
+          </div>
+          <p class="mt-4 text-sm leading-6 text-gray-600">{detail.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

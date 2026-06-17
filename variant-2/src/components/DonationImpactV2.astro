@@ -1,0 +1,45 @@
+---
+const impacts = [
+  {
+    amount: "₹500",
+    title: "School Supplies",
+    description: "Provides notebooks, stationery and basic learning materials for one child.",
+  },
+  {
+    amount: "₹2,000",
+    title: "Monthly Learning Support",
+    description: "Helps provide tutoring, mentoring and after-school learning support.",
+  },
+  {
+    amount: "₹5,000",
+    title: "Sponsor A Child Program",
+    description: "Supports a child's education journey through resources and guidance.",
+  },
+];
+---
+
+<section class="bg-[#FAFAF8] py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <p class="text-[#5D9C59] uppercase tracking-[0.2em] text-sm font-semibold mb-12">
+      Donation Impact
+    </p>
+
+    <div class="grid gap-12 md:grid-cols-3">
+      {impacts.map((item) => (
+        <article>
+          <h2 class="text-5xl font-bold text-[#2F3A45]">
+            {item.amount}
+          </h2>
+
+          <h3 class="mt-5 text-2xl font-bold text-[#2F3A45]">
+            {item.title}
+          </h3>
+
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            {item.description}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

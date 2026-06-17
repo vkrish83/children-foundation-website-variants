@@ -1,0 +1,40 @@
+---
+const values = [
+  {
+    title: "Education",
+    description: "We believe learning opens doors to confidence, independence and long-term change.",
+  },
+  {
+    title: "Opportunity",
+    description: "Every child deserves access to support that helps their potential become visible.",
+  },
+  {
+    title: "Community",
+    description: "Lasting impact grows when families, volunteers and local partners move together.",
+  },
+];
+---
+
+<section class="bg-[#FAFAF8] py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <p class="text-[#5D9C59] uppercase tracking-[0.2em] text-sm font-semibold">
+      Our Values
+    </p>
+    <h2 class="mt-5 text-4xl md:text-5xl font-bold text-[#2F3A45] leading-tight max-w-3xl">
+      The principles that guide every decision we make.
+    </h2>
+    <div class="mt-12 grid gap-12 md:grid-cols-3">
+      {values.map((value) => (
+        <article>
+          <h2 class="text-4xl font-bold text-[#2F3A45] leading-tight">
+            {value.title}
+          </h2>
+
+          <p class="mt-5 text-gray-600 leading-relaxed">
+            {value.description}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

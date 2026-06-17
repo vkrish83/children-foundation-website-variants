@@ -1,0 +1,48 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+---
+
+<Layout>
+
+  <Navbar />
+
+  <section
+    class="min-h-[70vh] flex items-center justify-center"
+  >
+
+    <div class="text-center px-6">
+
+      <h1 class="text-8xl font-bold text-[#5D9C59]">
+        404
+      </h1>
+
+      <h2
+        class="text-3xl font-bold text-[#2F3A45] mt-4"
+      >
+        Page Not Found
+      </h2>
+
+      <p class="text-gray-600 mt-4">
+        The page you are looking for doesn't exist.
+      </p>
+
+      <a
+        href="/"
+        class="inline-block mt-8
+               bg-[#5D9C59]
+               text-white
+               px-8 py-4
+               rounded-full
+               transition-all duration-300
+               hover:shadow-lg
+               hover:scale-105"
+      >
+        Return Home
+      </a>
+
+    </div>
+
+  </section>
+
+</Layout>

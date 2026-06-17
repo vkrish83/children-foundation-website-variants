@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavbarV4 from '../components/NavbarV4.astro';
+import ContactHeroV4 from '../components/ContactHeroV4.astro';
+import ContactChannelsV4 from '../components/ContactChannelsV4.astro';
+import ContactFormV4 from '../components/ContactFormV4.astro';
+import ContactReportingV4 from '../components/ContactReportingV4.astro';
+import FinalCTAV4 from '../components/FinalCTAV4.astro';
+import FooterV4 from '../components/FooterV4.astro';
+---
+
+<Layout>
+  <NavbarV4 />
+  <ContactHeroV4 />
+  <ContactChannelsV4 />
+  <ContactFormV4 />
+  <ContactReportingV4 />
+  <FinalCTAV4
+    headline="Start A Partnership Conversation."
+    text="Connect with the foundation team to discuss partnerships, program reporting, volunteering, or operational support."
+    primaryLabel="Submit Inquiry"
+    primaryHref="#contact-form"
+    secondaryLabel="View Programs"
+    secondaryHref="/programs"
+  />
+  <FooterV4 />
+</Layout>

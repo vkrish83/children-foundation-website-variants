@@ -1,0 +1,26 @@
+---
+const summary = ['3 Leaders', '5 Operating Areas', '8 Communities', '2026 Reporting Cycle'];
+---
+
+<section class="bg-[#F9FAFB]">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8 lg:py-20">
+    <div class="border-b border-gray-200 pb-10">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#2563EB]">Leadership</p>
+      <h1 class="mt-4 max-w-5xl text-5xl font-bold leading-[1.05] tracking-normal text-[#111827] sm:text-6xl">
+        Governance And Leadership Behind The Mission.
+      </h1>
+      <p class="mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+        Children First Foundation is led by a team focused on transparent operations, measurable outcomes and long-term education impact.
+      </p>
+    </div>
+
+    <div class="mt-6 flex flex-wrap gap-x-4 gap-y-2 text-sm font-semibold text-gray-700">
+      {summary.map((item, index) => (
+        <>
+          <span>{item}</span>
+          {index < summary.length - 1 && <span class="text-[#2563EB]">/</span>}
+        </>
+      ))}
+    </div>
+  </div>
+</section>

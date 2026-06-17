@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import CallToAction from "../components/CallToAction.astro";
+---
+
+<Layout>
+  <Navbar />
+
+  <section class="bg-[#FFFDF7] py-24">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h1 class="text-6xl font-bold text-[#2F3A45]">
+        About Us
+      </h1>
+
+      <p class="text-xl text-gray-600 mt-6 max-w-3xl mx-auto">
+        Empowering children through education, mentorship
+        and opportunity.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-[#2F3A45] mb-8">
+        Our Story
+      </h2>
+
+      <p class="text-lg text-gray-600 leading-relaxed">
+        Children First Foundation was established with a
+        simple belief: every child deserves access to
+        quality education and opportunities to thrive.
+      </p>
+
+      <p class="text-lg text-gray-600 leading-relaxed mt-6">
+        Through educational support, community engagement
+        and mentorship programs, we help children develop
+        confidence, skills and hope for the future.
+      </p>
+    </div>
+  </section>
+
+  <section class="bg-[#F2F8F0] py-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+
+      <div class="bg-white p-10 rounded-3xl">
+        <h3 class="text-3xl font-bold text-[#2F3A45] mb-4">
+          Our Mission
+        </h3>
+
+        <p class="text-gray-600">
+          To create opportunities for children through
+          education, mentorship and community support.
+        </p>
+      </div>
+
+      <div class="bg-white p-10 rounded-3xl">
+        <h3 class="text-3xl font-bold text-[#2F3A45] mb-4">
+          Our Vision
+        </h3>
+
+        <p class="text-gray-600">
+          A future where every child has the resources,
+          confidence and support needed to succeed.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <h2 class="text-4xl font-bold text-center text-[#2F3A45] mb-12">
+        Our Core Values
+      </h2>
+
+      <div class="grid md:grid-cols-4 gap-8">
+
+        <div class="bg-white shadow-sm p-8 rounded-3xl">
+          <h3 class="font-bold text-xl">Compassion</h3>
+        </div>
+
+        <div class="bg-white shadow-sm p-8 rounded-3xl">
+          <h3 class="font-bold text-xl">Education</h3>
+        </div>
+
+        <div class="bg-white shadow-sm p-8 rounded-3xl">
+          <h3 class="font-bold text-xl">Integrity</h3>
+        </div>
+
+        <div class="bg-white shadow-sm p-8 rounded-3xl">
+          <h3 class="font-bold text-xl">Community</h3>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <CallToAction />
+  <Footer />
+</Layout>

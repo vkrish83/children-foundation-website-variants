@@ -1,0 +1,51 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Meet Us",
+    text: "We learn about your interests, availability and the kind of role where you can be most helpful.",
+  },
+  {
+    number: "02",
+    title: "Prepare",
+    text: "You receive simple guidance, context and support before you begin working with children.",
+  },
+  {
+    number: "03",
+    title: "Show Up",
+    text: "You join a program rhythm where consistency, care and small actions create lasting trust.",
+  },
+];
+---
+
+<section class="bg-[#FAF7F2] py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-5 sm:px-6">
+    <div class="max-w-4xl">
+      <p class="text-xs font-semibold uppercase tracking-[0.28em] text-[#D97706] sm:text-sm">
+        The Journey
+      </p>
+
+      <h2 class="mt-6 text-4xl font-bold leading-tight text-[#1F2937] sm:text-5xl md:text-7xl">
+        A clear path into meaningful work.
+      </h2>
+    </div>
+
+    <div class="mt-16 divide-y divide-[#1F2937]/15 border-y border-[#1F2937]/15">
+      {steps.map((step) => (
+        <section class="grid gap-6 py-10 md:grid-cols-[180px_280px_1fr] md:items-start md:gap-10">
+          <p class="text-6xl font-bold leading-none text-[#D97706] md:text-7xl">
+            {step.number}
+          </p>
+
+          <h3 class="text-3xl font-bold text-[#1F2937] md:text-4xl">
+            {step.title}
+          </h3>
+
+          <p class="max-w-2xl text-lg leading-8 text-[#1F2937]/70">
+            {step.text}
+          </p>
+        </section>
+      ))}
+    </div>
+  </div>
+</section>

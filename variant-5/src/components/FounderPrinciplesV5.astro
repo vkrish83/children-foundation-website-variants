@@ -1,0 +1,40 @@
+---
+const principles = [
+	{
+		title: 'Stay Close',
+		text: 'Leadership begins beside children, families and volunteers, not above them.',
+		classes: 'bg-[#DD8A1A] text-[#111827] lg:col-span-5',
+	},
+	{
+		title: 'Listen First',
+		text: 'The best ideas come from the people living the work every day.',
+		classes: 'bg-[#111827] text-white lg:col-span-4 lg:translate-y-12',
+	},
+	{
+		title: 'Build Together',
+		text: 'Every useful step gets stronger when the community owns it together.',
+		classes: 'bg-[#0F766E] text-white lg:col-span-3',
+	},
+];
+---
+
+<section class="bg-[#FAF7F2] px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto max-w-7xl">
+		<div class="mb-12 grid gap-6 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
+			<p class="text-sm font-black uppercase text-[#0F766E]">Founder principles</p>
+			<h2 class="text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+				The rules are human. The work is shared.
+			</h2>
+		</div>
+
+		<div class="grid gap-5 lg:grid-cols-12">
+			{principles.map((principle, index) => (
+				<section class={`min-h-80 p-7 ${principle.classes}`}>
+					<p class="text-sm font-black uppercase opacity-75">0{index + 1}</p>
+					<h3 class="mt-12 text-4xl font-black uppercase leading-none sm:text-5xl">{principle.title}</h3>
+					<p class="mt-6 max-w-md text-lg font-bold leading-8 opacity-80">{principle.text}</p>
+				</section>
+			))}
+		</div>
+	</div>
+</section>

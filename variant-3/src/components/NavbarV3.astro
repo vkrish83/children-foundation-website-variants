@@ -1,0 +1,28 @@
+---
+const links = ["About", "Programs", "Stories", "Founders", "Contact"];
+---
+
+<header class="absolute inset-x-0 top-0 z-50">
+  <div class="mx-auto max-w-7xl px-5 py-6 sm:px-6 lg:py-8">
+    <div class="flex items-center justify-between gap-6">
+      <a href="/" class="text-lg font-semibold tracking-wide text-white sm:text-xl">
+        Children First
+      </a>
+
+      <nav class="hidden items-center gap-8 text-sm font-medium text-white/90 lg:flex">
+        {links.map((label) => (
+          <a href={`/${label.toLowerCase()}`} class="transition hover:text-white">
+            {label}
+          </a>
+        ))}
+
+        <a
+          href="/volunteer"
+          class="rounded-full border border-white/80 px-5 py-2.5 text-white transition hover:bg-white hover:text-[#1F2937]"
+        >
+          Volunteer
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>

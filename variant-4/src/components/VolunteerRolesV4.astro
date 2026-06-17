@@ -1,0 +1,61 @@
+---
+const roles = [
+  {
+    role: 'Learning Mentor',
+    focus: 'Reading and homework support',
+    commitment: '2 sessions/month',
+    contribution: 'Improves learning continuity',
+  },
+  {
+    role: 'Event Support Volunteer',
+    focus: 'Workshops and field activities',
+    commitment: 'Flexible',
+    contribution: 'Expands program delivery',
+  },
+  {
+    role: 'Community Coordinator',
+    focus: 'Family and local follow-ups',
+    commitment: 'Monthly',
+    contribution: 'Strengthens regional support',
+  },
+];
+---
+
+<section class="bg-[#F9FAFB]">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+    <div class="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#2563EB]">Role Streams</p>
+        <h2 class="mt-3 text-3xl font-bold text-[#111827] sm:text-4xl">Volunteer Role Framework</h2>
+      </div>
+      <p class="max-w-xl text-base leading-7 text-gray-600">
+        Role assignments are structured around focus area, expected commitment, and program contribution.
+      </p>
+    </div>
+
+    <div class="overflow-hidden rounded-lg border border-gray-200 bg-white shadow-sm">
+      <div class="overflow-x-auto">
+        <table class="min-w-[860px] w-full border-collapse text-left">
+          <thead class="bg-[#F9FAFB] text-xs font-semibold uppercase tracking-[0.14em] text-gray-500">
+            <tr>
+              <th class="border-b border-gray-200 px-5 py-4">Role</th>
+              <th class="border-b border-gray-200 px-5 py-4">Focus Area</th>
+              <th class="border-b border-gray-200 px-5 py-4">Commitment</th>
+              <th class="border-b border-gray-200 px-5 py-4">Program Contribution</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200 text-sm">
+            {roles.map((role) => (
+              <tr class="align-top">
+                <td class="px-5 py-5 font-bold text-[#111827]">{role.role}</td>
+                <td class="px-5 py-5 text-gray-600">{role.focus}</td>
+                <td class="px-5 py-5 font-semibold text-[#0F766E]">{role.commitment}</td>
+                <td class="px-5 py-5 text-gray-600">{role.contribution}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

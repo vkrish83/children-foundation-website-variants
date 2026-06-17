@@ -1,0 +1,45 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Apply",
+    description: "Share your interests, availability and the kind of support you would like to offer.",
+  },
+  {
+    number: "02",
+    title: "Connect",
+    description: "Meet our team, understand the programs and find the right volunteering path.",
+  },
+  {
+    number: "03",
+    title: "Make An Impact",
+    description: "Begin supporting children through meaningful, consistent and community-rooted action.",
+  },
+];
+---
+
+<section class="bg-[#FAFAF8] py-20">
+  <div class="max-w-5xl mx-auto px-6">
+    <p class="text-[#5D9C59] uppercase tracking-[0.2em] text-sm font-semibold">
+      Volunteer Journey
+    </p>
+
+    <div class="mt-12 grid gap-12 md:grid-cols-3">
+      {steps.map((step) => (
+        <article class="border-t border-gray-200 pt-8">
+          <p class="text-5xl font-bold text-[#5D9C59]">
+            {step.number}
+          </p>
+
+          <h2 class="mt-6 text-3xl font-bold text-[#2F3A45]">
+            {step.title}
+          </h2>
+
+          <p class="mt-5 text-gray-600 leading-relaxed">
+            {step.description}
+          </p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

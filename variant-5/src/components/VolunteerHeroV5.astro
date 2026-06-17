@@ -1,0 +1,42 @@
+---
+import volunteerImage from '../assets/volunteer-v5.png';
+import programsImage from '../assets/programs.png';
+---
+
+<section class="relative overflow-hidden bg-[#111827] px-5 py-16 text-white lg:px-8 lg:py-24">
+	<div class="absolute right-0 top-24 hidden h-28 w-2/5 bg-[#DD8A1A] lg:block"></div>
+	<div class="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+		<div class="relative z-10">
+			<p class="mb-5 inline-flex bg-[#DD8A1A] px-4 py-2 text-xs font-black uppercase text-[#111827]">
+				Volunteer
+			</p>
+			<h1 class="text-5xl font-black uppercase leading-[0.95] text-white sm:text-6xl lg:text-7xl xl:text-8xl">
+				Show Up.
+				<span class="text-[#DD8A1A]">Move Futures.</span>
+			</h1>
+			<p class="mt-7 max-w-xl text-lg font-semibold leading-8 text-white/75">
+				Join a community of people who read, mentor, listen, organize and keep showing up for children week after week.
+			</p>
+			<a href="/contact" class="mt-9 inline-flex bg-white px-7 py-4 text-sm font-black uppercase text-[#111827] transition hover:bg-[#DD8A1A]">
+				Start A Conversation
+			</a>
+		</div>
+
+		<div class="relative min-h-[540px] lg:min-h-[640px]">
+			<img
+				src={volunteerImage.src}
+				alt="Volunteers studying with children at a table"
+				class="absolute right-0 top-0 h-[72%] w-[90%] object-cover shadow-[18px_18px_0_#DD8A1A]"
+			/>
+			<img
+				src={programsImage.src}
+				alt="Children gathered around a volunteer outside a classroom"
+				class="absolute bottom-0 left-0 h-[34%] w-[58%] border-[10px] border-[#111827] object-cover shadow-[-18px_18px_0_#0F766E]"
+			/>
+			<div class="absolute bottom-12 right-0 max-w-56 bg-[#0F766E] p-6 text-white">
+				<p class="text-sm font-black uppercase text-[#FAF7F2]">One steady hour</p>
+				<p class="mt-2 text-2xl font-black uppercase leading-none">A child feels the whole room change.</p>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,33 @@
+---
+const steps = [
+  { number: '01', title: 'Register', text: 'Submit basic details, availability, and preferred support areas.' },
+  { number: '02', title: 'Orientation', text: 'Review program expectations, child safety practices, and reporting routines.' },
+  { number: '03', title: 'Role Matching', text: 'Match skills and availability to learning, event, or community support roles.' },
+  { number: '04', title: 'Field Support', text: 'Participate in assigned sessions, check-ins, workshops, or coordination activities.' },
+  { number: '05', title: 'Review', text: 'Track participation, coverage, training completion, and next-cycle availability.' },
+];
+---
+
+<section class="bg-white">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+    <div class="mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#0F766E]">Volunteer Operations</p>
+        <h2 class="mt-3 text-3xl font-bold text-[#111827] sm:text-4xl">Participation Workflow</h2>
+      </div>
+      <p class="max-w-xl text-base leading-7 text-gray-600">
+        The volunteer pathway standardizes intake, orientation, role assignment, field participation, and review.
+      </p>
+    </div>
+
+    <div class="grid border border-gray-200 bg-[#F9FAFB] md:grid-cols-5">
+      {steps.map((step) => (
+        <article class="border-b border-gray-200 p-5 last:border-b-0 md:border-b-0 md:border-r md:last:border-r-0">
+          <p class="text-sm font-bold text-[#2563EB]">{step.number}</p>
+          <h3 class="mt-5 text-xl font-bold text-[#111827]">{step.title}</h3>
+          <p class="mt-4 text-sm leading-6 text-gray-600">{step.text}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

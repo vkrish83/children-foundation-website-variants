@@ -1,0 +1,26 @@
+---
+import volunteerImage from '../assets/volunteer-v5.png';
+import storyImage from '../assets/story-girl.png';
+---
+
+<section id="mentorship" class="overflow-hidden bg-[#FAF7F2] px-5 py-20 lg:px-8 lg:py-28">
+	<div class="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+		<div>
+			<p class="mb-5 text-sm font-black uppercase text-[#0F766E]">Mentorship program</p>
+			<h2 class="text-4xl font-black uppercase leading-none text-[#111827] sm:text-6xl">
+				Relationships that help children imagine the next step.
+			</h2>
+			<p class="mt-7 max-w-xl text-lg font-medium leading-8 text-[#1F2937]">
+				Mentors help children name goals, build routines and find language for what they are feeling. The work is slow, personal and powerful because trust is not delivered; it is earned.
+			</p>
+			<div class="mt-8 inline-flex bg-[#DD8A1A] px-5 py-4 text-sm font-black uppercase text-[#111827]">
+				Show up. Listen. Stay.
+			</div>
+		</div>
+
+		<div class="relative min-h-[520px]">
+			<img src={volunteerImage.src} alt="Volunteers mentoring children during study time" class="absolute right-0 top-0 h-[76%] w-[86%] object-cover shadow-[18px_18px_0_#0F766E]" />
+			<img src={storyImage.src} alt="Schoolgirl holding books" class="absolute bottom-0 left-0 h-[38%] w-[44%] border-[10px] border-[#FAF7F2] object-cover shadow-[-18px_18px_0_#DD8A1A]" />
+		</div>
+	</div>
+</section>

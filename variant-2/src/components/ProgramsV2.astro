@@ -1,0 +1,87 @@
+---
+import programImage1 from "../assets/programs.png";
+import programImage2 from "../assets/programs2.png";
+import programImage3 from "../assets/programs3.png";
+---
+
+<section class="bg-[#FAFAF8] py-10">
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <p class="uppercase tracking-widest text-[#5D9C59] font-semibold mb-4">
+      Our Programs
+    </p>
+
+    <h2 class="text-5xl font-bold text-[#2F3A45] mb-20">
+      Building Brighter Futures
+    </h2>
+
+    <!-- Education -->
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center mb-28">
+
+      <div>
+        <h3 class="text-4xl font-bold text-[#2F3A45] mb-6">
+          Education
+        </h3>
+
+        <p class="text-lg text-gray-600 leading-relaxed">
+          We provide access to learning resources, school support and educational opportunities that help children reach their full potential.
+        </p>
+      </div>
+
+      <img
+        src={programImage1.src}
+        alt="Education Program"
+        class="w-full h-[400px] object-cover rounded-3xl"
+      />
+
+    </div>
+
+    <!-- Mentorship -->
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center mb-28">
+
+      <img
+        src={programImage2.src}
+        alt="Mentorship Program"
+        class="w-full h-[400px] object-cover rounded-3xl order-2 lg:order-1"
+      />
+
+      <div class="order-1 lg:order-2">
+        <h3 class="text-4xl font-bold text-[#2F3A45] mb-6">
+          Mentorship
+        </h3>
+
+        <p class="text-lg text-gray-600 leading-relaxed">
+          Through guidance and encouragement, volunteers help children build confidence, develop skills and pursue their goals.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Community -->
+
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <h3 class="text-4xl font-bold text-[#2F3A45] mb-6">
+          Community Support
+        </h3>
+
+        <p class="text-lg text-gray-600 leading-relaxed">
+          We work alongside families and local communities to create safe environments where children can thrive.
+        </p>
+      </div>
+
+      <img
+        src={programImage3.src}
+        alt="Community Support"
+        class="w-full h-[400px] object-cover rounded-3xl"
+      />
+
+    </div>
+
+  </div>
+
+</section>

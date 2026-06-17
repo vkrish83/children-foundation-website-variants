@@ -1,0 +1,127 @@
+---
+import programsImage from '../assets/programs.png';
+import dreamImage from '../assets/dream.png';
+import volunteerImage from '../assets/volunteer-v4.png';
+
+const educationKpis = [
+  { value: '2,100+', label: 'Study sessions' },
+  { value: '74%', label: 'Attendance consistency' },
+  { value: '38%', label: 'Reading confidence gain' },
+];
+
+const educationOutcomes = [
+  'School readiness and homework support delivered through recurring learning circles.',
+  'Digital exposure sessions introduced children to guided research and basic productivity tools.',
+  'Progress reviews helped coordinators identify children needing additional academic support.',
+];
+
+const secondaryPrograms = [
+  {
+    title: 'Mentorship',
+    image: dreamImage,
+    accent: 'text-[#2563EB]',
+    badge: 'Guidance',
+    kpis: [
+      { value: '120+', label: 'Active volunteers' },
+      { value: '64%', label: 'Monthly return rate' },
+    ],
+    outcome: 'Children receive goal-setting support, confidence-building conversations, and continuity from trained volunteer mentors.',
+  },
+  {
+    title: 'Community',
+    image: volunteerImage,
+    accent: 'text-[#0F766E]',
+    badge: 'Local Delivery',
+    kpis: [
+      { value: '8', label: 'Communities' },
+      { value: '18%', label: 'Reach growth' },
+    ],
+    outcome: 'Local partners help coordinate families, volunteers, venues, and follow-up support across each regional cluster.',
+  },
+];
+---
+
+<section id="programs" class="bg-[#F9FAFB]">
+  <div class="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
+    <div class="mb-10 max-w-3xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#F59E0B]">Program Portfolio</p>
+      <h2 class="mt-3 text-3xl font-bold text-[#111827] sm:text-4xl">Programs Overview</h2>
+      <p class="mt-4 text-base leading-7 text-gray-600">
+        Three coordinated streams connect immediate child support with durable community capacity.
+      </p>
+    </div>
+
+    <div class="grid gap-6 lg:grid-cols-3 lg:items-stretch">
+      <article class="rounded-lg border border-gray-200 bg-white shadow-sm lg:col-span-2">
+        <div class="grid min-h-full gap-0 md:grid-cols-[0.7fr_1.3fr]">
+          <div class="border-b border-gray-200 p-5 md:border-b-0 md:border-r">
+            <img src={programsImage.src} alt="Education program" class="h-48 w-full rounded-md object-cover md:h-full" />
+          </div>
+
+          <div class="flex flex-col p-6 lg:p-8">
+            <div class="flex flex-wrap items-start justify-between gap-4 border-b border-gray-200 pb-6">
+              <div>
+                <p class="text-sm font-semibold uppercase tracking-[0.18em] text-[#F59E0B]">Primary Program</p>
+                <h3 class="mt-3 text-3xl font-bold text-[#111827]">Education</h3>
+              </div>
+              <span class="rounded bg-blue-50 px-3 py-1 text-xs font-semibold text-[#2563EB]">Highest Reach</span>
+            </div>
+
+            <p class="mt-6 max-w-2xl text-base leading-7 text-gray-600">
+              Foundational learning support, school readiness, digital exposure, and guided academic reinforcement form the largest share of direct child engagement.
+            </p>
+
+            <div class="mt-8 grid gap-4 sm:grid-cols-3">
+              {educationKpis.map((kpi) => (
+                <div class="rounded-md border border-gray-200 bg-[#F9FAFB] p-4">
+                  <p class="text-2xl font-bold text-[#2563EB]">{kpi.value}</p>
+                  <p class="mt-2 text-xs font-semibold uppercase tracking-[0.12em] text-gray-500">{kpi.label}</p>
+                </div>
+              ))}
+            </div>
+
+            <div class="mt-8">
+              <p class="text-sm font-bold text-[#111827]">Reported Outcomes</p>
+              <ul class="mt-4 space-y-3">
+                {educationOutcomes.map((outcome) => (
+                  <li class="flex gap-3 text-sm leading-6 text-gray-600">
+                    <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#0F766E]"></span>
+                    <span>{outcome}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <div class="grid gap-6">
+        {secondaryPrograms.map((program) => (
+          <article class="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+            <div class="flex gap-4">
+              <img src={program.image.src} alt={`${program.title} program`} class="h-20 w-20 shrink-0 rounded-md object-cover" />
+              <div>
+                <p class={`text-xs font-semibold uppercase tracking-[0.16em] ${program.accent}`}>{program.badge}</p>
+                <h3 class="mt-2 text-2xl font-bold text-[#111827]">{program.title}</h3>
+              </div>
+            </div>
+
+            <div class="mt-6 grid grid-cols-2 gap-3">
+              {program.kpis.map((kpi) => (
+                <div class="rounded-md border border-gray-200 bg-[#F9FAFB] p-4">
+                  <p class={`text-2xl font-bold ${program.accent}`}>{kpi.value}</p>
+                  <p class="mt-2 text-xs font-semibold uppercase tracking-[0.12em] text-gray-500">{kpi.label}</p>
+                </div>
+              ))}
+            </div>
+
+            <div class="mt-5 border-t border-gray-200 pt-5">
+              <p class="text-xs font-semibold uppercase tracking-[0.14em] text-gray-500">Outcome</p>
+              <p class="mt-3 text-sm leading-6 text-gray-600">{program.outcome}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>

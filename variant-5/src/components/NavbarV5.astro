@@ -1,0 +1,37 @@
+---
+const navItems = [
+	{ label: 'About', href: '/about' },
+	{ label: 'Founders', href: '/founders' },
+	{ label: 'Programs', href: '/programs' },
+	{ label: 'Stories', href: '/stories' },
+	{ label: 'Volunteer', href: '/volunteer' },
+	{ label: 'Contact', href: '/contact' },
+];
+---
+
+<header class="sticky top-0 z-50 border-b border-[#111827]/10 bg-[#FAF7F2]/95 backdrop-blur">
+	<nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Primary navigation">
+		<a href="/" class="group flex items-center gap-3">
+			<span class="flex h-11 w-11 items-center justify-center bg-[#DD8A1A] text-xl font-black text-[#111827]">CF</span>
+			<span class="leading-none">
+				<span class="block text-lg font-black uppercase text-[#111827]">Children First</span>
+				<span class="block text-xs font-bold uppercase text-[#0F766E]">Community Movement</span>
+			</span>
+		</a>
+
+		<div class="hidden items-center gap-8 md:flex">
+			{navItems.map((item) => (
+				<a class="text-sm font-extrabold uppercase text-[#111827] transition hover:text-[#DD8A1A]" href={item.href}>
+					{item.label}
+				</a>
+			))}
+		</div>
+
+		<a
+			href="/volunteer"
+			class="hidden bg-[#111827] px-5 py-3 text-sm font-black uppercase text-white transition hover:bg-[#0F766E] sm:inline-flex"
+		>
+			Join The Movement
+		</a>
+	</nav>
+</header>
