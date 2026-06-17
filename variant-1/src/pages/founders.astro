@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
 import FounderCard from "../components/FounderCard.astro";
+import founderImage from '../assets/founder-1.png';
+import FounderImage2 from '../assets/founder-2.png';
 ---
 
 <Layout>
@@ -30,14 +32,14 @@ import FounderCard from "../components/FounderCard.astro";
       <FounderCard
         name="Founder Name"
         role="Founder & Trustee"
-        image="https://placehold.co/300x300"
+        image={founderImage.src}
         bio="Dedicated to creating educational opportunities for underserved children."
       />
 
       <FounderCard
         name="Co-Founder Name"
         role="Co-Founder"
-        image="https://placehold.co/300x300"
+        image={FounderImage2.src}
         bio="Passionate about empowering communities through education and mentorship."
       />
 
